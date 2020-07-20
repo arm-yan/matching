@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Services\MatchingService;
+namespace Armyan\Matching;
 
-use App\Services\MatchingService\Requirements\AgeRequirement;
-use App\Services\MatchingService\Requirements\DivisionRequirement;
-use App\Services\MatchingService\Requirements\Requirement;
-use App\Services\MatchingService\Requirements\TimezoneRequirement;
+use Armyan\Matching\Requirements\AgeRequirement;
+use Armyan\Matching\Requirements\DivisionRequirement;
+use Armyan\Matching\Requirements\Requirement;
+use Armyan\Matching\Requirements\TimezoneRequirement;
 use stdClass;
 
 class Matching

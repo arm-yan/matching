@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Services\MatchingService;
+namespace Armyan\Matching;
 
-use App\Services\MatchingService\Exception\FileNotFoundException;
-use App\Services\MatchingService\Exception\InvalidFileFormatException;
+use Armyan\Matching\Exception\FileNotFoundException;
+use Armyan\Matching\Exception\InvalidFileFormatException;
 
 class Parser
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Services\MatchingService\Exception;
+namespace Armyan\Matching\Exception;
 
 use Exception;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Services\MatchingService\Requirements;
+namespace Armyan\Matching\Requirements;
 
 class TimezoneRequirement implements Requirement
 {
