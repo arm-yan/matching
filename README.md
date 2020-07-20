@@ -1,11 +1,8 @@
 # Matching System
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
+[![Latest Stable Version](https://poser.pugx.org/arm-yan/matching/v)](//packagist.org/packages/arm-yan/matching)
+[![License](https://poser.pugx.org/arm-yan/matching/license)](//packagist.org/packages/arm-yan/matching)
+[![Total Downloads](https://poser.pugx.org/arm-yan/matching/downloads)](//packagist.org/packages/arm-yan/matching)
 
 ## Structure
 ```
@@ -25,8 +22,10 @@ $ composer require arm-yan/matching
 
 ``` php
 $service = new Matching();
+$parser = new Parser();
+$csvArray = $parser->convertCsvToArray($request->file('csv')->path());
+$data = $parser->parseCsvArray($csvArray);
 
-//$data is emplyoees list
 $set = $service->getHighestAverageSet($data);
 
 //Adding requirement, $requirement Requirement interfeace implementation
